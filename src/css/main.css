@@ -60,6 +60,27 @@ video {
 }
 
 /* 01. Sélecteurs CSS */
+h2 {
+  font-size: 25px;
+}
+
+h2,
+h3 {
+  font-weight: 700;
+}
+
+.section .year {
+  color: red;
+}
+
+.section h3 {
+  text-decoration: underline;
+}
+
+h2.category,
+h3.year {
+  font-style: italic;
+}
 
 /* 02. Centrer horizontalement */
 
@@ -68,10 +89,15 @@ video {
   padding: 20px;
   background: #ccc;
   border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 .button-wrapper {
   margin-top: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .button {
@@ -87,6 +113,7 @@ video {
   width: 150px;
   margin-bottom: 20px;
   background: #ccc;
+  text-align: center;
 }
 
 .calltoaction {
@@ -97,4 +124,25 @@ video {
   background: #ccc;
 }
 
+.link,
+.calltoaction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
 /* 04. Display inline et block */
+
+h2.article-title,
+p {
+  display: inline;
+}
+
+strong {
+  display: block;
+}
+
+h2.article-title {
+  font-weight: 400;
+}
